@@ -10,6 +10,9 @@ import UIKit
 
 class SecondViewController2: UIViewController {
 
+   
+    @IBOutlet weak var firstLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,12 +35,17 @@ class SecondViewController2: UIViewController {
     }
     
     
-    @IBAction func changeColorButtonPressed(_ sender: Any) {
-    } self.view.backgroundcolor = color.blue
+    @IBAction func changeColorButtonPressed(_ sender: Any)
+    {
+     self.view.backgroundColor = UIColor.blue
+    }
     
     
-    
+
+@IBAction func changeLabelTextButtonPressed(_ sender: Any)
+{
+    self.firstLabel.text = "I feel confident with the Xcode troubleshooting process"
 }
-@IBAction func changeLabelTextButtonPressed(_ sender: Any) {
-    firstLabel.text = I feel confident with the Xcode troubleshooting process"
+    
+    
 }
